@@ -1,0 +1,280 @@
+*{
+  background: linear-gradient(90deg black rgb(13, 85, 167) );
+  box-sizing: border-box;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  
+}
+
+body{
+    line-height: 2;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-height: 100vh;
+    
+}
+
+
+.main{
+    flex-direction: column;
+    border-radius: 5px;
+    min-width: 10%; 
+    padding: 0%;
+    align-content: center;
+    display: block;
+    background-color: rgb(6, 24, 189);
+    
+    
+}
+
+.notifyLog{
+  margin-left: 280px;
+}
+label{
+    display: block;
+    position: static;
+    
+}
+p{
+    font-size: .875rem;
+    text-align: center;
+    margin: 0;
+}
+button, input{
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.btn{
+    cursor: pointer;
+    width: auto;
+    color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 15px 30px;
+    background: blue;
+
+}
+
+.previous {
+    cursor: pointer;
+    margin-right: 8px;
+    border-radius: 20px;
+    color: white;
+    background-color:blue;
+    padding: 6px 20px !important;
+  }
+  
+  @media (max-width: 400px) {
+    .previous {
+      display: inline-block;
+      padding: 6px 45px !important;
+      margin: 5px 0;
+    }
+
+  }
+  
+  @media (max-width: 480px) {
+    .previous {
+      display: inline-block;
+      padding: 6px 45px !important;
+      margin: 5px 0;
+    }
+  
+  }
+
+
+  
+
+.btn:hover{
+    background: green 0 none;
+    font-size: .875rem;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0rem;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    
+    cursor: pointer;
+}
+
+
+  #form{
+    max-width: 75rem;
+    min-width: 25rem;
+    
+    background: white;
+    border-radius: 1.2rem 1.2rem 1.2rem 0px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    align-self: center;
+    box-sizing: inherit;
+    margin-left: 0%;
+    
+    
+    padding: 2.5rem 2.5rem 3rem 2.5rem; 
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+#top {
+  width: 100%;
+  padding: 15px;
+
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background:rgb(6, 24, 189);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#top h2 {
+  margin-bottom: 10px;
+}
+
+#top p {
+  float: right;
+  font-weight: 700;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+#questions {
+  border-radius: 0.3em;
+  padding: 15px 20px;
+  width: 90%;
+  text-align: center;
+  max-width: 600px;
+  background:aquamarine;
+  margin: 0 auto;
+}
+
+#questions p {
+  font-size: 1.2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#questions li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+#questions ul {
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 0.3em;
+}
+#questions {
+  transition: all 1s;
+}
+
+#questions li:hover {
+  background: grey;
+}
+
+#buttons {
+  margin: 15px 0;
+}
+
+#questions li.selected {
+  color: white;
+  background: deepskyblue;
+}
+
+#questions li.correct {
+  color: white;
+  background: #00816A;
+}
+
+#questions li.incorrect {
+  color: white;
+  background:rgb(247, 44, 44);
+}
+
+#submit,
+#next {
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+#submit {
+  background: black;
+  transition: all 1s;
+}
+#submit:hover{
+  background-color: rgb(6, 24, 189);
+}
+#next {
+  background: black;
+  transition: all 1s;
+}
+#next:hover {
+  background-color: rgb(6, 24, 189);
+}
+#submit.disabled,
+#next.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color:  rgb(6, 24, 189);
+  background-color: aqua
+}
+
+
+.modal-content {
+ 
+  margin: 15% auto;
+  font-size: 1.1em;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+
+
+.modal-content p a,
+#instructions p a {
+  font-size: 1.1em;
+  color: #607d8b;
+  transition: all 1s;
+  font-weight: bold;
+}
+
+.modal-content p a:hover,
+#instructions p a:hover {
+  background-color: #01579b;
+  color: #ffffff;
+  border-radius: 3px;
+  text-decoration: none;
+}

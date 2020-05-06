@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title> Quiz </title> 
+    
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+       
+        
+<section id="form" >
+                    <div class="main" style="padding: 2.5rem 2.5rem 3rem 2.5rem; ">
+                                <fieldset>
+                                    <p style="font-weight: bold; font-size: 50px; "> Trivia </p>
+                                    <div id="top" style="align-items: center;">
+                                   
+                                       <p class="notifyLog"> 
+                                        
+                                          <p style=" margin-top: 5px; background-color: aquamarine; border-radius: 10%; ">  Correctly Answered  <span id="counter">0</span> </p> 
+                                           <p style="background-color:aquamarine; margin-top: 5px; border-radius: 10%;"> Remaining  <span id="numOfQuestion">5</span> questions</p>
+                                        </p>
+                                    </div>
+                                    
+         <div id="questions">
+            <p id="Currentquestion"></p>
+            
+            <ul id="answers"></ul>
+            <div id="buttons">
+                <button id="submit" class="disabled">Submit</button>
+                <button id="next" class="disabled">Next</button>
+            </div>
+        </div>
+
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><a href="index.html"> &times;</a></span>
+            <h3>All Done!! </h3>
+            <p id="modalContent"></p>
+            <p><a href="quiz.html">Click here to take quiz again</a></p>
+           
+        </div>
+
+    </div>
+
+    </fieldset>
+     
+    </div> 
+ </section>
+
+            <script src="script.js"></script>       
+
+</body>
+</html>
